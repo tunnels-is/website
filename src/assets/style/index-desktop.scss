@@ -56,6 +56,10 @@
   --max-width: 1200px;
 }
 
+:root {
+  background: #111212;
+}
+
 .bigtitle {
   font-size: 45px !important;
   font-weight: 800 !important;
@@ -272,7 +276,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-top: 5px;
+  padding-top: 2px;
   text-transform: uppercase;
 
   transition: color .2s ease-in-out, background .2s ease-in-out;
@@ -292,6 +296,7 @@ body::-webkit-scrollbar {
   /* box-shadow: var(--menu-shadow); */
   background-color: var(--c-background);
   padding-left: 30px;
+  padding-bottom: 40px;
 
   .menu-wrapper {
     display: flex;
@@ -302,12 +307,14 @@ body::-webkit-scrollbar {
   .item-wrapper {
     display: flex;
     flex-direction: row;
+    margin-top: 4px;
+    margin-left: 10px;
   }
 
   .logo {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 16px;
+    left: 14px;
     height: 30px;
     width: auto;
     cursor: pointer;
@@ -315,8 +322,8 @@ body::-webkit-scrollbar {
 
   .menu-handle {
     position: fixed;
-    top: 10px;
-    left: 50px;
+    top: 16px;
+    left: 57px;
     display: none;
     height: 30px;
     width: auto;
@@ -421,7 +428,7 @@ body::-webkit-scrollbar {
 
 }
 
-.pricing-component {
+.register-component {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,12 +438,85 @@ body::-webkit-scrollbar {
     margin: 100px 0px 60px 0px;
   }
 
+
+  .success {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 50px;
+    color: var(--c-green);
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form {
+    width: 400px;
+    height: fit-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .error {
+      font-size: 24px;
+      color: var(--c-red);
+      margin-bottom: 20px;
+    }
+
+
+    .field {
+      padding-left: 10px;
+      font-size: 24px;
+      color: var(--c-white);
+      border: 1px solid white;
+      height: 40px;
+      width: 100%;
+      background: var(--c-shade3);
+      outline: none;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .field::placeholder {
+      color: var(--c-shade4);
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      align-self: center;
+      height: 50px;
+      width: 50%;
+      font-size: 30px;
+    }
+  }
+}
+
+.pricing-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  /* .title { */
+  /*   margin: 50px 0px 20px 0px; */
+  /* } */
+  text-align: center;
+
+  .sub-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .link {
     text-decoration: none;
   }
 
   .cyber-monday {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    color: var(--c-green);
     font-size: 50px;
   }
 
@@ -850,6 +930,7 @@ body::-webkit-scrollbar {
   }
 
   img,
+  svg,
   object {
     height: auto;
     width: 70%;
@@ -973,6 +1054,10 @@ body::-webkit-scrollbar {
   }
 }
 
+.download-page {
+  gap: 50px;
+}
+
 .download {
   /* margin-top: 100px; */
   margin-bottom: 100px;
@@ -1029,6 +1114,11 @@ body::-webkit-scrollbar {
       margin-top: 40px;
       font-size: 16.5px;
       line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--c-blue);
     }
 
     hr {

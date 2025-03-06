@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import ScrollAnimate from "../components/ScrollAnimate";
 import STORE from "../store";
 import BigFeatures from "../components/BigFeatures";
-import Diagram from "../components/TextImageCenter";
+import Diagram from "../components/DiagramComp";
 
 const f = [
 	{ ...STORE.Content.Features.Basic.DNSCustom, Tag: "big25", BG: true },

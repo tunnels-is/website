@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
-import TextImageRight from "../components/TextImageRight";
 import ScrollAnimate from "../components/ScrollAnimate";
-import TextImageLeft from "../components/TextImageLeft";
 import SmallBanner from "../components/SmallBanner";
 import BigFeatures from "../components/BigFeatures";
-import Download from "../components/Download";
 import STORE from "../store";
 import ContactSales from "../components/ContactSales";
-import Diagram from "../components/TextImageCenter";
+import Diagram from "../components/DiagramComp";
 
 const bigFeatures = [
 	{ ...STORE.Content.Features.Enterprise.UserManagement, Tag: "bigfeatureanimate3", BG: true },

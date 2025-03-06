@@ -1,13 +1,10 @@
-import TextImageRight from "../components/TextImageRight";
 import TextImageLeft from "../components/TextImageLeft";
 import ScrollAnimate from "../components/ScrollAnimate";
 import SmallBanner from "../components/SmallBanner";
 import BigFeatures from "../components/BigFeatures";
-import Download from "../components/Download";
 import React, { useEffect } from "react";
 import STORE from "../store";
-import TextImageCenter from "../components/TextImageCenter";
-import Diagram from "../components/TextImageCenter";
+import Diagram from "../components/DiagramComp";
 
 
 const featureList2 = [

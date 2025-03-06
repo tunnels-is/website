@@ -15,7 +15,7 @@ const TextImageLeft = (props) => {
 		<div className={`content text`}>
 			<div className="title">{props.title}</div>
 			{props.link &&
-				<a href={"#" + props.link} className="link">learn more</a>
+				<a href={props.link} className="link">learn more</a>
 			}
 			<div dangerouslySetInnerHTML={{ __html: props.content }}>
 			</div>

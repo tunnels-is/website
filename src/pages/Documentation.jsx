@@ -86,8 +86,8 @@ const Documentation = () => {
 			list = menu
 		}
 
-		console.dir(menu)
-		console.dir(list)
+		// console.dir(menu)
+		// console.dir(list)
 		list?.Menu.forEach((m, i) => {
 			if (m.tag.toLowerCase() === tag.toLowerCase()) {
 				gg = { ...m, index: i }

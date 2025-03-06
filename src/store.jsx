@@ -1,5 +1,6 @@
 const DATA = "data_";
 import { LayersIcon } from '@radix-ui/react-icons';
+import axios from 'axios';
 const Version = "1.0.15"
 
 var STORE = {
@@ -96,7 +97,11 @@ var STORE = {
 			Title: "",
 			Link: "Anonymous top-ups"
 		},
+		Register: {
+			Title: "Join Tunnels Today",
+			Subtitle: "24/h free trial no credit card required",
 
+		},
 		Home: {
 			Banner: {
 				Title: "Tunnels",
@@ -598,6 +603,24 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 
 		},
 	},
+	API: {
+		Register: async (data) => {
+			try {
+				let resp = await axios.post(
+					"https://api.tunnels.is:444/v3/user/create",
+					data,
+					{
+						timeout: 10000,
+						headers: { "Content-Type": "application/json" }
+					}
+				)
+				return resp
+
+			} catch (error) {
+				return error
+			}
+		}
+	}
 
 };
 

@@ -1,5 +1,12 @@
 @media (max-width: 650px) {
 
+  .download {
+    .link-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
   .pricing-wrapper {
     flex-direction: column !important;
 

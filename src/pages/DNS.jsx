@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import ScrollAnimate from "../components/ScrollAnimate";
-import Download from "../components/Download";
-import SmallBanner from "../components/SmallBanner";
-import STORE from "../store";
 import TextImageRight from "../components/TextImageRight";
+import ScrollAnimate from "../components/ScrollAnimate";
 import BigFeatures from "../components/BigFeatures";
-import Diagram from "../components/TextImageCenter";
+import SmallBanner from "../components/SmallBanner";
+import Diagram from "../components/DiagramComp";
+import STORE from "../store";
 
 
 const f = [

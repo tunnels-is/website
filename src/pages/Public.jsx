@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import ScrollAnimate from "../components/ScrollAnimate";
 import SmallBanner from "../components/SmallBanner";
-import Download from "../components/Download";
 import BigFeatures from "../components/BigFeatures";
 import STORE from "../store";
 import TextImageRight from "../components/TextImageRight";
-import Diagram from "../components/TextImageCenter";
+import Diagram from "../components/DiagramComp";
 
 const featureList = [
 	{ ...STORE.Content.Features.Basic.NoInstallation, Tag: "big11", BG: true },

@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import React, { useEffect, useState } from "react";
 
@@ -19,6 +19,7 @@ import DNS from "./pages/DNS";
 import PublicPage from "./pages/Public";
 import FreePage from "./pages/Free";
 import NavBar from "./components/NavBar";
+import RegisterPage from "./pages/Register";
 
 var rootEle = document.getElementById('root')
 const root = createRoot(rootEle);
@@ -28,7 +29,7 @@ const App = () => {
 
 	return (
 		<React.StrictMode>
-			<HashRouter >
+			<BrowserRouter >
 
 				<NavBar />
 
@@ -43,6 +44,7 @@ const App = () => {
 						<Route path="/enterprise" element={<Enterprise />} />
 						<Route path="/download" element={<DownloadPage />} />
 						<Route path="/pricing" element={<PricingPage />} />
+						<Route path="/register" element={<RegisterPage />} />
 						<Route path="/cybermonday" element={<PricingPage />} />
 						<Route path="/dns" element={<DNS />} />
 
@@ -53,7 +55,7 @@ const App = () => {
 				</div>
 
 				<Footer />
-			</HashRouter>
+			</BrowserRouter>
 		</React.StrictMode >
 	)
 }

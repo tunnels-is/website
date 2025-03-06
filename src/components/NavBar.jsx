@@ -31,7 +31,6 @@ const NavBar = (props) => {
 	}
 
 	const navHandler = (path) => {
-		console.log("navigating to:", path)
 		navigate(path)
 	}
 
@@ -93,7 +92,7 @@ const NavBar = (props) => {
 				Download
 			</div>
 			<div className="cta-button b2"
-				onClick={() => navHandler("/pricing")}
+				onClick={() => navHandler("/register")}
 			>
 				Sign Up
 			</div>

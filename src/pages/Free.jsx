@@ -5,7 +5,7 @@ import Download from "../components/Download";
 import STORE from "../store";
 import TextImageRight from "../components/TextImageRight";
 import TextImageLeft from "../components/TextImageLeft";
-import Diagram from "../components/TextImageCenter";
+import Diagram from "../components/DiagramComp";
 
 const FreePage = () => {
 	const [initialize] = ScrollAnimate()

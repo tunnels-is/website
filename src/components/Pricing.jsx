@@ -14,14 +14,6 @@ const Pricing = () => {
 	return (
 		<div className={"pricing-component pricing-animate viewport-hide"}>
 
-			<div className="title">
-				<a className="link"
-					target="_blank"
-					href={STORE.Config.AnonKey.URL}
-				>
-					{STORE.Config.AnonKey.Title + ' ' + STORE.Config.AnonKey.Price + '$'}
-				</a>
-			</div>
 
 			<div className="pricing-wrapper">
 
@@ -53,12 +45,24 @@ const Pricing = () => {
 
 			</div>
 
+			<div className="title sub-links">
+				<a className="link"
+					target="_blank"
+					href={STORE.Config.AnonKey.URL}
+				>
+					{STORE.Config.AnonKey.Title + ' ' + STORE.Config.AnonKey.Price + '$'}
+				</a>
 
-			<div className="title cyber-monday link"
-				onClick={() => navigate("/free")}
-			>
-				We also have some free stuff..
+				<a className="link"
+					target="_blank"
+					onClick={() => navigate("/free")}
+				>
+					Free Features
+				</a>
 			</div>
+
+
+
 		</div>
 	)
 }
