@@ -63,6 +63,7 @@ const Banner = (props) => {
 
 	useEffect(() => {
 			$('#myMosaic').Mosaic({ 
+				innerGap: 10
 	});
 	}, [])
 
