@@ -14,58 +14,58 @@ var STORE = {
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/public-routable-vpn.svg",
 			},
 			Genericvpn: {
-				Title: "Tunnels VPN",
-				Content: "Our VPN implementation functions like any other VPN, but it also has some additional features you might not see in generic VPN's, such as VPN multiplexing with custom NAT, routing and routable DNS.",
+				Title: "Multi Route VPN + LAN",
+				Content: "",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/gen-vpn-multiplex-v2.svg",
 			},
 			VPNEncryption: {
 				Title: "Encryption and Security",
-				Content: "Tunnels implements modern cryptographic protocols and handshaking procedures. Before each device authenticates it will link with the VPN server in order to grab it's certificate serial number, the serial number is then included in the authentication request to the controller, which verifies that the serial number is valid and signes the connection request with a private key. Certificate serial numbers can be invalidated in order to prevent devices from connecting to that server. Once authentication is complete the device will start the handshake procedure. <br/></br>Supported encryption types are AES128/256 and chacha20 poly1305. Supported handshake types are elliptic curve p521 and X25519.<br/><br/> Every step of the encryption and handshake process is handled by golang standard library methods, we do not hand-roll our own encryption schemes or functions.",
+				Content: "Tunnels implements modern cryptographic protocols and handshaking procedures. <br/></br>Supported encryption types are AES128/256 and chacha20 poly1305. Supported handshake types are elliptic curve p521 and X25519.<br/><br/>Authentication and Authorization use a combination of user/password and certificates. <br/><br/> Every step of the encryption and handshake process is handled by golang standard library methods, we do not hand-roll our own encryption schemes or functions.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/vpn-encryption.svg",
 			},
 			IsolatedNetwork: {
-				Title: "Isolated Networks",
-				Content: "Tunnels isolated networks are software defined packet relay networks, they are isolated from outside traffic and operate along side the generic VPN implementation on the same server. These networks inherit the customizability of our generic VPN implementation and have their own internal firewall.",
+				Title: "LAN Networks",
+				Content: "",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/isolated-network-raw.svg",
 			},
 			IsolatedNetworkDetails: {
-				Title: "Isolated Networks",
-				Content: "Tunnels isolated networks are a pure software construct, they do not use IP fowarding which prevents packet forgery. These networks also implement their own internal connection tracking, preventing unsolicited packets from reaching client devices. The connection tracking can be turned off, which allows packets to flow freely or each device can declared which hosts are allowed to send it packets. The isolated network is perfect for IoT, file sharing or any other type of device networks that do not need nor want to be communicating directly with the internet.",
+				Title: "LAN Networks",
+				Content: "Tunnels LAN networks connect individual devices through an abstract network layer that exists on a single server. </br></br> The LAN network is perfect for things like IoT devices, file servers, databases and other services that require stricter access controls.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/vpn-isolated-multinetwork.svg",
 			},
 			Routing: {
 				Title: "Custom Routing",
-				Content: "Custom routing can be deifined on the server and on the device, and is applied whenever a device connects to a server. Having device configurable routing can solve many networking problems that often arise in VPN networks.",
+				Content: "",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/routing.svg",
 			},
 			RoutingDetails: {
 				Title: "Advanced Routing",
-				Content: "Defining custom routes in Tunnels is simple, it can be done server side or in the device config. Routing configurations are completely abstract from the unerlying networks, meaning, any IP address can be routed to any tunnel interface/network.",
+				Content: "Defining custom routes in Tunnels is simple, it can be done server side or in the device config.</br></br> Routing configurations are abstracted from the unerlying networks, which enabled routing of any IP address to any VPN or LAN network.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/vpn-routing-advanced.svg",
 			},
 			Nat: {
 				Title: "Custom Nat",
-				Content: "Custom NAT can also be defined on the device or on the server, and much like the custom routing implementation, it can solve many networking problems both on the device side and server side.",
+				Content: "",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/nat.svg",
 			},
 			NatDetails: {
 				Title: "Abstract Nat",
-				Content: "Tunnels NAT is completely abstract from the underlying networks, much like the routing. Any IP can be translated to any other address. This feature can resolve a host of networking problems that happen in larger more mature environments.<br/></br> This removes the need to implement advanced NAT protocols inside the inner networking infrastructure to accomidate outside VPN connections.",
+				Content: "Tunnels NAT is completely abstracted from the underlying networks, much like the routing.</br></br> Any IP Address can be translated to any other IP Address. This feature can resolve networking problems that happen in large environments.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/nat-full.svg",
 			},
 			Dns: {
 				Title: "Routable DNS and Filtering",
-				Content: "Tunnels offers a unique solution to DNS problems in the form of routable DNS configurations. Both device and server configurations can declair custom DNS records and full domain redirects. Full domain redirects allow the device to understand which connection to use when resolving a certain domain. Additionally, Tunnels DNS includes a full DNS filtering system with various threat lists.",
+				Content: "",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/dns.svg",
 			},
 			DnsServerSide: {
 				Title: "Server DNS Configurations",
-				Content: "Tunnels servers can be configured to forward domains, including wildcards, to an internal network. This removes the need for specific client side DNS records or switching DNS servers when users swhich networks. When a device connects to a tunnels server it's DNS configurations are sent to the device.",
+				Content: "Tunnels servers can be configured to forward domains, including wildcards, to an internal network. This removes the need for specific client side DNS records or switching DNS servers when users swhich networks.</br></br> When a device connects to a tunnels server it's DNS configurations are sent to the device.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/dns-routing.svg",
 			},
 			DnsDeviceSide: {
 				Title: "Device DNS Configurations",
-				Content: "The tunnels application config can also include custom DNS records and DNS routing options. All configurations are in JSON format and are editable using the GUI.",
+				Content: "DNS records can be registered in the Tunnels application config, removing the need to DNS servers.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/dns.svg",
 			},
 			SysadminMulti: {
@@ -83,7 +83,7 @@ var STORE = {
 		ContactSales: {
 			Title: "Contact Us",
 			link: "mailto:support@tunnels.is",
-			linkTitle: "support @ tunnels.is"
+			linkTitle: "support@tunnels.is"
 		},
 		Download: {
 			Title: "Download",
@@ -105,8 +105,8 @@ var STORE = {
 		Home: {
 			Banner: {
 				Title: "Tunnels",
-				Subtitle: "Advanced Networking Software",
-				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/new/full-public-servers.png",
+				Subtitle: "VPN, LAN, NAT, Routing, DNS blocking, DNS routing and more!",
+				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/home-banner.png",
 				Img2: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/new/blocked-dns.png",
 			},
 
@@ -172,14 +172,14 @@ var STORE = {
 			},
 			DNSProtection: {
 				Title: "DNS Threat Protection",
-				Content: `Tunnels offers a built-in DNS Server/Proxy which comes with extensive blacklisting features, daily block list updates and the ability to define custom DNS records and DNS Routing. This DNS server also facilitates DNS Routing to ensure the domains are resolved from the correct DNS servers.`,
-				Img: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/dns-resolve-and-block.png",
+				Content: `Tunnels offers a built-in DNS Server/Proxy which comes with extensive blacklisting features, daily block list updates and the ability to define custom DNS records. </br></br>Tunnels DNS server also facilitates DNS Routing to ensure proper DNS resolution when connected to multiple networks.`,
+				Img: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/dns-panel.png",
 			},
 		},
 		FeaturePage: {
 			SmallBanner: {
-				Title: "How Does It Work ?",
-				Subtitle: "it's just tunnels, servers, algorithms.. and a touch of magic",
+				Title: "The Quick Start Guide",
+				Subtitle: '<a class="link" href="/docs/Quick%20Setup" >can be found here</> ',
 			},
 
 			TunnelsToServersDiagram: {
@@ -250,7 +250,7 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 			},
 			TextImageLeft: {
 				Title: "Reduced Attack Surface",
-				Content: `Our VPN and API endpoints are written in golang with minimal module use and no 3rd party services. This method of simplicity reduces the oppurtunities which hackers have to attack the platform.
+				Content: `Tunnels is written in golang with minimal module use and no 3rd party services. This method of simplicity reduces the overall attack surface, simplifies security reviews and minimizes the risk of vulnerabilities.
 <br/><br/><a href="https://go.dev">Golang</a> is an open source programming language made by google and is under strict review by security experts.`,
 				Img: "https://raw.githubusercontent.com/tunnels-is/media/master/web/gopher.png",
 			},
@@ -270,17 +270,17 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 				},
 				NoPersistance: {
 					Title: "No Persistence",
-					Content: "Tunnels does not leave any services or hidden files on your system",
+					Content: "Everything is kept exactly where you placed tunnels, no hidden files or background services",
 					Icon: LayersIcon,
 				},
 				NoInstallation: {
 					Title: "Portable",
-					Content: "Just download Tunnels and place it wherever you like, even on a USB.",
+					Content: "Just download Tunnels and place it wherever you like, even on a USB.. No installation required",
 					Icon: LayersIcon,
 				},
 				AnonymousAccounts: {
 					Title: "Anonymity",
-					Content: "Accounts can be created using usernames or uuids. No personal information required",
+					Content: "Accounts can be created using usernames or uuids",
 					Icon: LayersIcon,
 				},
 				AnonymousPayments: {
@@ -335,7 +335,7 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 				},
 				Torrenting: {
 					Title: "Special Servers",
-					Content: "We are in the process of setting up server designed for P2P sharing without restrictions",
+					Content: "We are in the process of setting up server designated to Torrenting",
 					Icon: LayersIcon,
 				},
 
@@ -348,22 +348,27 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 				},
 				TunnelsOnOpenWRT: {
 					Title: "Tunnels on OpenWRT",
-					Content: "Our NAT protocol was designed to work on unix based router firmware",
+					Content: "Our NAT protocol was designed to work on unix based router software",
 					Icon: LayersIcon,
 				},
 				OptimizedSoftware: {
-					Title: "Multi-threaded & modern language",
+					Title: "Modern language",
 					Content: "Tunnels is built from the ground up using Golang, a multi-threaded modern programming language",
 					Icon: LayersIcon,
 				},
-				AbstractNAT: {
-					Title: "Abstract NAT",
-					Content: "Client and server side NAT abstractions",
+				KillSwitch: {
+					Title: "Kill Switch",
+					Content: "Prevent IP leaks during accidental disconnects",
 					Icon: LayersIcon,
 				},
-				RouteBased: {
-					Title: "Custom Routing",
-					Content: "Client and server side custom routing",
+				Management: {
+					Title: "User Management",
+					Content: "Manage users, groups and devices in the application UI",
+					Icon: LayersIcon,
+				},
+				UserNameBased: {
+					Title: "Invite Friends",
+					Content: "Invited friends to join your tunnels server with simple user/password registration",
 					Icon: LayersIcon,
 				},
 			},

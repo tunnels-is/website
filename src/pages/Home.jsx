@@ -1,21 +1,10 @@
 import React, { useEffect } from "react";
-import TextImageLeft from "../components/TextImageLeft";
-import TextImageRight from "../components/TextImageRight";
 import Banner from "../components/Banner";
 import ScrollAnimate from "../components/ScrollAnimate";
 import STORE from "../store";
-import BigFeatures from "../components/BigFeatures";
 import Diagram from "../components/DiagramComp";
+import TextImageRight from "../components/TextImageRight";
 
-const f = [
-	{ ...STORE.Content.Features.Basic.DNSCustom, Tag: "big25", BG: true },
-	{ ...STORE.Content.Features.Basic.DNSBlocking, Tag: "big21", BG: false },
-]
-
-const f2 = [
-	{ ...STORE.Content.Features.Advanced.AbstractNAT, Tag: "big31", BG: false },
-	{ ...STORE.Content.Features.Advanced.RouteBased, Tag: "big32", BG: true },
-]
 const Home = () => {
 	const [initialize] = ScrollAnimate()
 
@@ -37,12 +26,6 @@ const Home = () => {
 
 		let a = {}
 
-		f?.forEach(f => {
-			a[f.Tag] = true
-		})
-		f2?.forEach(f => {
-			a[f.Tag] = true
-		})
 		initialize(a)
 
 		window.scrollTo(0, 0)
@@ -50,17 +33,16 @@ const Home = () => {
 
 	return (<div className="home-page">
 
-
 		<Banner
 			title={STORE.Content.Home.Banner.Title}
 			subtitle={STORE.Content.Home.Banner.Subtitle}
 			img1={STORE.Content.Home.Banner.Img1}
-			img2={STORE.Content.Home.Banner.Img2}
 			tag1={"animate1"}
 		/>
 
 
 		<Diagram
+			imgClass="diagram-fix-ml"
 			link={"/technical"}
 			title={STORE.Content.Diagrams.Genericvpn.Title}
 			content={STORE.Content.Diagrams.Genericvpn.Content}
@@ -69,6 +51,7 @@ const Home = () => {
 		/>
 
 		<Diagram
+			imgClass="diagram-fix-ml"
 			link={"/technical"}
 			title={STORE.Content.Diagrams.IsolatedNetwork.Title}
 			content={STORE.Content.Diagrams.IsolatedNetwork.Content}
@@ -77,6 +60,7 @@ const Home = () => {
 		/>
 
 		<Diagram
+			imgClass="diagram-fix-ml"
 			link={"/technical"}
 			title={STORE.Content.Diagrams.Routing.Title}
 			content={STORE.Content.Diagrams.Routing.Content}
@@ -86,21 +70,28 @@ const Home = () => {
 
 		<Diagram
 			link={"/technical"}
+			imgClass="diagram-fix-ml"
 			title={STORE.Content.Diagrams.Nat.Title}
 			content={STORE.Content.Diagrams.Nat.Content}
 			img={STORE.Content.Diagrams.Nat.Img1}
 			tag1={"animate5"}
 		/>
 
+		<TextImageRight
+			title={STORE.Content.DNSPage.DNSProtection.Title}
+			content={STORE.Content.DNSPage.DNSProtection.Content}
+			img={STORE.Content.DNSPage.DNSProtection.Img}
+			tag1={"animate7"}
+		/>
+
 		<Diagram
 			link={"/dns"}
+			imgClass="diagram-fix-ml"
 			title={STORE.Content.Diagrams.Dns.Title}
 			content={STORE.Content.Diagrams.Dns.Content}
 			img={STORE.Content.Diagrams.Dns.Img1}
 			tag1={"animate6"}
 		/>
-
-
 
 	</div>)
 

@@ -8,12 +8,14 @@ const Diagram = (props) => {
 			{props.link &&
 				<a href={props.link} className=" link">learn more</a>
 			}
-			<div className="subtitle text" dangerouslySetInnerHTML={{ __html: props.content }}>
-			</div>
+			{(props.content && props.content !== "") &&
+				<div className="subtitle text" dangerouslySetInnerHTML={{ __html: props.content }}>
+				</div>
+			}
 		</div>
 
 		<img
-			className={`${props.tag1} viewport-hide`}
+			className={`${props.tag1} ${props.imgClass} viewport-hide`}
 			src={props.img}
 		/>
 

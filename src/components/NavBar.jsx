@@ -14,14 +14,13 @@ const NavBar = (props) => {
 	const [open, setOpen] = useState(false);
 
 	const items = [
-		{ icon: ExternalLinkIcon, label: "Public VPN", route: "public" },
 		{ icon: ExternalLinkIcon, label: "Private VPN", route: "technical" },
-		{ icon: EnterIcon, label: "Routable DNS", route: "dns" },
+		// { icon: EnterIcon, label: "DNS Routing", route: "dns" },
+		{ icon: ExternalLinkIcon, label: "Public Network", route: "public" },
 		{ icon: EnterIcon, label: "Enterprise", route: "enterprise" },
-		{ icon: ExternalLinkIcon, label: "Pricing", route: "Pricing" },
+		// { icon: ExternalLinkIcon, label: "Pricing", route: "Pricing" },
 		{ icon: AccessibilityIcon, label: "Documentation", route: "docs", },
 	]
-
 
 	let { pathname } = location
 	let sp = pathname.split("/")

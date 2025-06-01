@@ -197,13 +197,11 @@ html {
 }
 
 body {
-  /* overflow: hidden !important; */
+  overflow-x: hidden !important;
   position: relative;
-  margin: auto !important;
   min-height: 100vh !important;
 
   width: 100% !important;
-  max-width: 1200px !important;
   font-size: 12.5px;
 
   /* font-family: 'Inter Variable', sans-serif !important; */
@@ -244,9 +242,13 @@ body::-webkit-scrollbar {
 .content-wrapper {
   transition: filter ease-in 0.2s;
   margin-top: 50px;
+
   padding-bottom: 200px;
   min-height: 100vh;
-}
+
+  margin: auto !important;
+  max-width: 1400px !important;
+  }
 
 .blur {
   filter: blur(3px);
@@ -866,9 +868,13 @@ body::-webkit-scrollbar {
 }
 
 .banner {
-  margin-top: 120px;
-  height: 600px;
+  height: 100vh;
   position: relative;
+  /* margin: auto !important; */
+  /* max-width: 1600px !important; */
+  width:100%;
+  margin-top: 120px !important;
+  /* margin-bottom: 200px !important; */
 
   .top-text {
     text-align: center;
@@ -887,7 +893,7 @@ body::-webkit-scrollbar {
     }
 
     .subtitle {
-      margin-top: 0px;
+      margin-top: 20px;
       font-size: 24px;
       color: var(--c-shade4)
     }
@@ -902,17 +908,23 @@ body::-webkit-scrollbar {
     /* border: 1px solid rgb(25 25 25 / 61%); */
     box-shadow: 9px 12px 18px 3px rgba(0, 0, 0, 0.38);
     position: absolute;
-    border-radius: 9px;
+    /* border-radius: 9px; */
   }
 
   .top {
     top: 160px;
-    left: 100px;
-    width: 80%;
+    /* left: 3%; */
+    width: 100%;
   }
 
-
 }
+
+.diagram-fix-ml{
+margin-left:55px;
+ }
+.diagram-fix-nml{
+margin-left:-55px;
+ }
 
 .diagram-component {
   text-align: center;

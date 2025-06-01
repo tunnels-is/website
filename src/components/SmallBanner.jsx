@@ -5,9 +5,8 @@ const SmallBanner = (props) => {
 
 		<div className="top-text">
 			<div className="title">{props.title}</div>
-			<div className="subtitle">
-				{props.subtitle}
-			</div>
+			<p className="subtitle" dangerouslySetInnerHTML={{ __html: props.subtitle }}>
+			</p>
 		</div>
 
 	</div>)

@@ -53,12 +53,6 @@ const Pricing = () => {
 					{STORE.Config.AnonKey.Title + ' ' + STORE.Config.AnonKey.Price + '$'}
 				</a>
 
-				<a className="link"
-					target="_blank"
-					onClick={() => navigate("/free")}
-				>
-					Free Features
-				</a>
 			</div>
 
 
