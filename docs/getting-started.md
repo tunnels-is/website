@@ -1,44 +1,34 @@
-# Getting Started
+# Tunnels Public Network
 
----
+## Download Tunnels
 
-## Downloading and Installing the **Tunnels** app
+[All Releases](https://github.com/tunnels-is/tunnels/releases)
+
+[Windows](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Windows_x86_64.zip)
+[Windows arm64](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Windows_arm64.zip)
+[Linux](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Linux_x86_64.tar.gz)
+[Linux arm64](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Linux_arm_64.tar.gz)
+[MacOS](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Darwin_x86_64.tar.gz)
+[MacOS arm64](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Darwin_arm64.tar.gz)
+
+## Register
+NOTE: Tunnels supports username registration on a first come first served basis.You can register in the app or [on the website](https://www.tunnels.is/register)
+
+## Login
+NOTE: The `Device Name` field is used to identify your logins. f.x. "home-workstation" or "work-laptop"
+
+## Get a license key
+NOTE: all new accounts come with a 24 hour free trial
+NOTE: We highly recommend buying the anonymous license key if you registered with an anonymous account.
+ 1. License keys can be baught [here](https://tunnels.lemonsqueezy.com/). 
+ 2. Activevate your license key in the app, go to: `Account` > `License Key`
+
+## Connect
+ 1. Navigate to `VPN`
+ 2. Connect to a server of your choosing
 
 
-You can download the latest release of the **Tunnels** app from [here](https://github.com/tunnels-is/tunnels/releases).
 
----
 
-## Installing the **Tunnels** app
 
-On Windows and Linux, you can simply run the **Tunnels** executable.
-On MacOS, you will need to drag it to the applications folder first.
 
----
-
-## Creating a new account
-
-Launch the **Tunnels** app, and on the login screen, click **Register** near the bottom.
-
-![Click register to create a new account](https://raw.githubusercontent.com/tunnels-is/media/master/v3/guides/new-accounts/register-new-account-0.png)
-
-1. Enter your email.
-2. Enter your password.
-3. Click the `Register` button.
-
-![creating a new account](https://raw.githubusercontent.com/tunnels-is/media/master/v3/guides/new-accounts/register-new-account-1.png)
-
----
-
-## Getting and activating your license key
-
-You can buy a license key from [here](https://tunnels.is/#/Pricing).
-
-To activate it, login to the app and: 
-1. Go to **Profile** in the sidebar.
-2. Enter your key in the License Key field.
-3. Click the `Activate Key` button below it.
-
-![Activate your license here](https://raw.githubusercontent.com/tunnels-is/media/master/v3/guides/new-accounts/activating-license-key-0.png)
-
----

@@ -60,7 +60,7 @@ var STORE = {
 			},
 			DnsServerSide: {
 				Title: "Server DNS Configurations",
-				Content: "Tunnels servers can be configured to forward domains, including wildcards, to an internal network. This removes the need for specific client side DNS records or switching DNS servers when users swhich networks.</br></br> When a device connects to a tunnels server it's DNS configurations are sent to the device.",
+				Content: "Tunnels servers can be configured to forward domains, including wildcards, to an internal network. This removes the need for specific client side DNS records or switching DNS servers when users change networks.</br></br> When a device connects to a tunnels server it's DNS configurations are sent to the device.",
 				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/diagrams/dns-routing.svg",
 			},
 			DnsDeviceSide: {

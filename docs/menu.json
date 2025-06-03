@@ -7,7 +7,7 @@
 			"indent": 0
 		},
 		{
-			"tag": "Getting Started",
+			"tag": "Public Network",
 			"file": "getting-started.md",
 			"indent": 2
 		},
@@ -17,54 +17,14 @@
 			"indent": 2
 		},
 		{
-			"tag": "Anonymous Accounts",
-			"file": "anonymous-accounts.md",
-			"indent": 2
-		},
-		{
-			"tag": "Anonymous Keys",
-			"file": "anonymous-portable-license-keys.md",
-			"indent": 2
-		},
-		{
-			"tag": "Managing Devices",
-			"file": "managing-logged-in-devices.md",
-			"indent": 2
-		},
-		{
 			"tag": "Password Recovery",
 			"file": "password-recovery.md",
-			"indent": 2
-		},
-		{
-			"tag": "Account Top-Up",
-			"file": "account-top-up.md",
-			"indent": 2
-		},
-		{
-			"tag": "Application Settings",
-			"file": "application-settings.md",
-			"indent": 0
-		},
-		{
-			"tag": "General Settings",
-			"file": "general-settings.md",
-			"indent": 2
-		},
-		{
-			"tag": "Advanced Settings",
-			"file": "advanced-settings.md",
 			"indent": 2
 		},
 		{
 			"tag": "Connections",
 			"file": "connections.md",
 			"indent": 0
-		},
-		{
-			"tag": "Connecting to a Server",
-			"file": "connecting-server.md",
-			"indent": 2
 		},
 		{
 			"tag": "Configuring Connections",
@@ -79,11 +39,6 @@
 		{
 			"tag": "Creating Device Keys",
 			"file": "min-iot-device-keys.md",
-			"indent": 2
-		},
-		{
-			"tag": "DNS Initialization",
-			"file": "min-iot-dns.md",
 			"indent": 2
 		},
 		{
@@ -117,16 +72,6 @@
 			"indent": 2
 		},
 		{
-			"tag": "Custom Blocklist",
-			"file": "custom-blocklist.md",
-			"indent": 2
-		},
-		{
-			"tag": "DNS Analytics",
-			"file": "dns-stats.md",
-			"indent": 2
-		},
-		{
 			"tag": "Private Servers",
 			"file": "vpn-server.md",
 			"indent": 0
@@ -146,10 +91,5 @@
 			"file": "vpn-linux-config.md",
 			"indent": 2
 		},
-		{
-			"tag": "2x IP Setup",
-			"file": "vpn-2ip.md",
-			"indent": 2
-		}
 	]
 }
