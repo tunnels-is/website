@@ -10,15 +10,49 @@
 
 .imageGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 200px;
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(350px, auto);
+  gap: 2rem;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1600px;
+  padding: 2rem;
   grid-template-areas:
-    "tall1 normal1 wide1 wide1"
-    "tall1 normal2 tall2 normal3"
-    "normal9 wide2 tall2 normal4";
+    "tall1 wide1 wide1"
+    "tall1 tall2 tall3";
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "tall1 wide1"
+      "tall1 tall2"
+      "tall3 tall3";
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-areas:
+      "tall1"
+      "wide1"
+      "tall2"
+      "tall3";
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .banner {
+    padding: 1rem;
+  }
+
+  .imageContainer {
+    min-height: 300px;
+  }
 }
 
 .imageContainer {
@@ -36,6 +70,11 @@
 
 .tall2 {
   grid-area: tall2;
+  height: 100%;
+}
+
+.tall3 {
+  grid-area: tall3;
   height: 100%;
 }
 
