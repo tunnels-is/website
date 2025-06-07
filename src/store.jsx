@@ -612,10 +612,11 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 		Register: async (data) => {
 			try {
 				let resp = await axios.post(
-					"https://api.tunnels.is:444/v3/user/create",
+					// "https://api.tunnels.is:444/v3/user/create",
+					"https://api.tunnels.is/v3/user/create",
 					data,
 					{
-						timeout: 10000,
+						timeout: 20000,
 						headers: { "Content-Type": "application/json" }
 					}
 				)

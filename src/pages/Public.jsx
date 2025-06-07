@@ -31,6 +31,7 @@ const PublicPage = () => {
 			"animate2": true,
 			"animate3": true,
 			"animate4": true,
+			"animate10": true,
 		}
 
 		featureList?.forEach(f => {
@@ -47,7 +48,6 @@ const PublicPage = () => {
 
 	return (
 		<div className="basic-page">
-
 			<SmallBanner
 				title={"The Tunnels Network"}
 				subtitle={"multi route public network"}

@@ -15,9 +15,9 @@ const Register = () => {
 	const register = async () => {
 
 		let resp = await STORE.API.Register({
-			email: email,
-			password: pass,
-			password2: pass2,
+			Email: email,
+			Password: pass,
+			Password2: pass2,
 		})
 		console.dir(resp)
 		if (resp.status === 200) {
