@@ -867,8 +867,9 @@ body::-webkit-scrollbar {
 
 }
 
+
+
 .banner {
-  height: 100vh;
   position: relative;
   /* margin: auto !important; */
   /* max-width: 1600px !important; */
@@ -903,9 +904,10 @@ body::-webkit-scrollbar {
 
   .top {
     top: 160px;
-    /* left: 3%; */
-    width: 100%;
+    width: calc(100% + 40px);
+    margin-left:-20px;
   }
+ 
 
 }
 
