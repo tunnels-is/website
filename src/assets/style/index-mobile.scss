@@ -153,7 +153,11 @@
 
   .banner {
     margin-top: 70px;
-    height: 480px;
+    height: fit-content;
+
+    .item-1, .item-4, .item-5 {
+      display:none;
+    }
 
     .top-text {
       .title {

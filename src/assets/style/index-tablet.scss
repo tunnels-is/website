@@ -163,8 +163,12 @@
   }
 
   .banner {
-    height: 600px;
+    height: fit-content;
 
+    .item-4, .item-5 {
+      display:none;
+    }
+ 
     .right {
       left: 70px;
       top: 303px;

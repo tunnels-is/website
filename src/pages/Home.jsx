@@ -37,6 +37,10 @@ const Home = () => {
 			title={STORE.Content.Home.Banner.Title}
 			subtitle={STORE.Content.Home.Banner.Subtitle}
 			img1={STORE.Content.Home.Banner.Img1}
+			img2={STORE.Content.Home.Banner.Img2}
+			img3={STORE.Content.Home.Banner.Img3}
+			img4={STORE.Content.Home.Banner.Img4}
+			img5={STORE.Content.Home.Banner.Img5}
 			tag1={"animate1"}
 		/>
 

@@ -1,7 +1,7 @@
 const DATA = "data_";
 import { LayersIcon } from '@radix-ui/react-icons';
 import axios from 'axios';
-const Version = "2.0.0"
+const Version = "2.0.1"
 
 var STORE = {
 	Name: "Tunnels",
@@ -89,8 +89,8 @@ var STORE = {
 			Title: "Download",
 			Subtitle: "click here for all available releases",
 			AllLink: "https://github.com/tunnels-is/tunnels/releases/latest",
-			MacOS: "https://github.com/tunnels-is/tunnels/releases/download/" + Version + "/tunnels_" + Version + "_Darwin_arm64.tar.gz",
-			Windows: "https://github.com/tunnels-is/tunnels/releases/download/" + Version + "/tunnels_" + Version + "_Windows_x86_64.zip",
+			MacOS: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Darwin_arm64.tar.gz",
+			Windows: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Windows_x86_64.zip",
 			Linux: "https://github.com/tunnels-is/tunnels/releases/latest",
 		},
 		Pricing: {
@@ -106,8 +106,11 @@ var STORE = {
 			Banner: {
 				Title: "Tunnels",
 				Subtitle: "VPN, LAN, NAT, Routing, DNS blocking, DNS routing and more!",
-				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/home-banner.png",
-				Img2: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/new/blocked-dns.png",
+				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/new-website/banner-grid/1.png",
+				Img2: "https://raw.githubusercontent.com/tunnels-is/media/master/new-website/banner-grid/2.png",
+				Img3: "https://raw.githubusercontent.com/tunnels-is/media/master/new-website/banner-grid/3.png",
+				Img4: "https://raw.githubusercontent.com/tunnels-is/media/master/new-website/banner-grid/4.png",
+				Img5: "https://raw.githubusercontent.com/tunnels-is/media/master/new-website/banner-grid/5.png",
 			},
 
 			TriForce: {
@@ -469,7 +472,7 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 		],
 
 	},
-	MenuURL: "https://raw.githubusercontent.com/tunnels-is/nice-website/main/docs/menu.json",
+	MenuURL: "https://raw.githubusercontent.com/tunnels-is/website/main/docs/menu.json",
 	GetAndSaveDomain: function() {
 		let host = window.location.host
 		let domain = "default"
