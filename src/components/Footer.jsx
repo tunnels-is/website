@@ -3,32 +3,32 @@ import React, { useEffect } from "react";
 import ScrollAnimate from "./ScrollAnimate";
 
 const footerLinks = [
-	{ text: "Private VPN", url: "/#/technical" },
-	{ text: "Free Features", url: "/#/free" },
+	{ text: "Private VPN", url: "/technical" },
+	{ text: "Free Features", url: "/free" },
 	{ text: "Terms", url: "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tunnels-is/media/master/terms/terms.pdf" },
 	{ text: "Github", url: "https://github.com/tunnels-is" },
 	{ text: "X", url: "https://x.com/tunnels_is" },
 
-	{ text: "Public VPN", url: "/#/public" },
-	{ text: "Documentation", url: "/#/docs" },
+	{ text: "Public VPN", url: "/public" },
+	{ text: "Documentation", url: "/docs" },
 	{ text: "Terms (Icelandic)", url: "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tunnels-is/media/master/terms/terms-icelandic.pdf" },
 	{ text: "", url: "" },
 	{ text: "Discord", url: "https://discord.com/invite/7Ts3PCnCd9" },
 
-	{ text: "Routable DNS", url: "/#/dns" },
+	{ text: "Routable DNS", url: "/dns" },
 	{ text: "Timeline", url: "https://calendar.google.com/calendar/embed?src=support%40nicelandvpn.is" },
 	{ text: "", url: "" },
 	{ text: "", url: "" },
 	{ text: "", url: "" },
 
-	{ text: "Enterprise", url: "/#/enterprise" },
-	{ text: "Pricing", url: "/#/pricing" },
+	{ text: "Enterprise", url: "/enterprise" },
+	{ text: "Pricing", url: "/pricing" },
 	{ text: "", url: "" },
 	{ text: "", url: "" },
 	{ text: "Signal", url: "https://signal.group/#CjQKIGvNLjUd8o3tkkGUZHuh0gfZqHEsn6rxXOG4S1U7m2lEEhBtuWbyxBjMLM_lo1rVjFX0" },
 
 	{ text: "", url: "" },
-	{ text: "Download", url: "/#/download" },
+	{ text: "Download", url: "/download" },
 	{ text: "", url: "" },
 	{ text: "", url: "" },
 	{ text: "Reddit", url: "https://www.reddit.com/r/tunnels_is/" },
