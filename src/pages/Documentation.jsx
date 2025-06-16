@@ -41,7 +41,6 @@ const Documentation = () => {
 		let loadIn = async function() {
 			await loadMenu()
 			if (tag === "" || !tag) {
-				console.log("POST MENU LOAD:", tag)
 				await changePage("Introduction")
 			} else {
 				await changePage(tag)
@@ -82,15 +81,6 @@ const Documentation = () => {
 
 		let gg = undefined
 
-		// if (menu?.Menu?.length > 0) {
-		// 	list = menu
-		// }
-
-		console.dir(STORE.DocMenu.BaseURL)
-		console.dir(STORE.DocMenu.Menu)
-		console.dir(STORE.DocMenu)
-		console.dir(tag)
-		console.dir(tag.toLowerCase())
 		STORE.DocMenu?.Menu?.forEach((m, i) => {
 			console.log(tag, m.tag)
 			if (m.tag.toLowerCase() === tag.toLowerCase()) {
@@ -99,7 +89,6 @@ const Documentation = () => {
 			}
 		})
 
-		console.log(gg)
 		if (!gg) {
 			setContent(`# 404 - tag not found`)
 			return
