@@ -1,2 +1,2 @@
 # Minimal / IoT client
-TODO
+The minimal client can be used for devices that do not require advanced features.

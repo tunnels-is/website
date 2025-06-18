@@ -22,16 +22,6 @@
 			"indent": 2
 		},
 		{
-			"tag": "Connections",
-			"file": "connections.md",
-			"indent": 0
-		},
-		{
-			"tag": "Configuring Connections",
-			"file": "connections-configuring.md",
-			"indent": 2
-		},
-		{
 			"tag": "Minimal + IoT Client",
 			"file": "min-iot.md",
 			"indent": 0
@@ -39,11 +29,6 @@
 		{
 			"tag": "Creating Device Keys",
 			"file": "min-iot-device-keys.md",
-			"indent": 2
-		},
-		{
-			"tag": "Embeding Tunnels",
-			"file": "min-iot-embeding.md",
 			"indent": 2
 		},
 		{
