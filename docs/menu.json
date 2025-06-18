@@ -72,7 +72,7 @@
 			"indent": 2
 		},
 		{
-			"tag": "Private Servers",
+			"tag": "Tunnels Servers",
 			"file": "vpn-server.md",
 			"indent": 0
 		},

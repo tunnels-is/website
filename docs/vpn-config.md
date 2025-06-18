@@ -1,49 +1,52 @@
 # Server Config Breakdown
-
 ```json
 {
-  "ID": "6714f2479950f0dfede56c18", // Server ID found in `Tunnels UI`
-  "ControlIP": "93.95.231.66", // IP used for connecting
-  "ControlPort": "444", // Port used for connection
-  "UserMaxConnections": 4, // Maximum concurrent user connections
-  "InterfaceIP": "93.95.231.66", // Actual VPN IP
-  "DataPort": "443", // Port used for receiving/sending packets to client
-  "StartPort": 2000, // Start port for NAT
-  "EndPort": 65500, // End port for NAT
-  "AvailableMbps": 1000, // Available total bandwidth in Megabits per second
-  "AvailableUserMbps": 10, // Minimum allocated bandwidth per user in Megabits per second
-  "InternetAccess": true, // Toggles internet access for VPN users
-  "LocalNetworkAccess": true, // Toggles local network access for VPN users
-  "DNSAllowCustomOnly": false, // Prevents non-custom DNS queries from resolving on this network
-  "AdminEntities":["device-key", "user-id"], // Admin entities are DeviceKeys or UserIDs that are allowed to bypass the VPN Firewall
-  "DNS": [ // Custom DNS records ( can be over-written in the tunnel config )
-    {
-      "Domain": "meow.com", // custom DNS record
-      "Wildcard": true, // Enabling wildcard will resolve any sub-domain to the current config
-      "TXT": ["text record 1", "text record 2"],
-      "IP": ["10.10.10.15", "10.10.10.14"],
-      "CNAME": ""
-    }
-  ],
-  "Networks": [ // Custom Network settings ( can be over-written in the tunnel config )
-    {
-      "Tag": "default",
-      "Network": "93.95.231.66/24", // The server side network
-      "Nat": "10.10.10.1/24", // The client side NAT network
-      "Routes": [
-         {
-            "Address":"1.1.1.1/32", // Custom route addeed when connecting
-            "Metric":"0"
-         }
-      ]
-    }
-  ],
-  "DNSServers": [ // DNS servers used when resolving on this VPN network ( can be over-written in the tunnel config )
-    "1.1.1.1",
-    "8.8.8.8"
-  ],
-  "ControlCert": "./server.crt",
-  "ControlKey": "./server.key"
+    "Features": [
+        "LAN", // local network emulator
+        "VPN", // default VPN
+        "AUTH", // auth API
+        "DNS", // DNS server ( still in development )
+        "BBOLT" // BBOLT embeded database
+    ],
+    "VPNIP": "192.248.170.119", // IP address used for APIs
+    "APIPort": "443", // port used for APIs
+    "APIIP": "192.248.170.119", // IP address used for packets
+    "VPNPort": "444", // port used for packets
+    "Admins": [], // Not in use but reserved
+    "NetAdmins": [], // Network admins, list of device tokens that can bypass LAN firewall
+    "Hostname": "tunnels.local",
+    "Lan": {
+        "Tag": "lan",
+        "Network": "10.0.0.0/16",
+        "Nat": ""
+    },
+    "DisableLanFirwall": false, // disables the LAN firewall completely
+    "SubNets": [], // Registered VPN subnets, can be used to create network NAT
+    "Routes": [ // Registered routes, can be used to create routes to Subnets or other locations reachable by the VPN
+        {
+            "Address": "10.0.0.0/16",
+            "Metric": "0",
+            "Gateway": ""
+        }
+    ],
+    "StartPort": 2000, // the first port allocated to users
+    "EndPort": 65530, // the last port allocated to users
+    "UserMaxConnections": 10,
+    "InternetAccess": true,
+    "LocalNetworkAccess": false, // Enabled/disables local network access for the VPN
+    "BandwidthMbps": 1000, // total server bandwidth, used to calculate how many ports each user gets
+    "BandwidthUserMbps": 10, // total bandwidth per users, used to calculate how many ports each user gets 
+    "DNSAllowCustomOnly": false, // used to force clients into only routing custom DNS records to this server
+    "DNSRecords": [], // used to register custom DNS records
+    "DNSServers": [], // used to overwrite DNS addresses for users on this server
+    "SecretStore": "config", // determines where secrets are stored (config/env)
+    "AdminApiKey": "87942090-f1be-46a2-bed1-f16e21430ecb", // This API key enabled access to certain APIs without requiring login
+    "DBurl": "mongodb://127.0.0.1:27017", // mongodb URL, only used if mongodb is enabled
+    "TwoFactorKey": "a63eba96c5d44f549e5926dc5eb29a00", // encryption key used to encrypt two factor authentication (DO NOT LOSE THIS)
+    "EmailKey": "", // only usefull for Tunnels public network (AUTH module)
+    "PayKey": "", // only used by tunnels public network (AUTH module)
+    "CertPem": "./cert.pem",
+    "SignPem": "./sign.pem", // the sign pem is only required if the server does not run the AUTH module, otherwise the SignPem is the CertPem (NOT KeyPem) from the AUTH server. 
+    "KeyPem": "./key.pem"
 }
-
 ```
