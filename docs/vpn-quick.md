@@ -27,11 +27,10 @@ Run the server binary using the `--config` flag.
 $ ./server --config
 ```
 
-</br>
 The server will generate the following files:
-config.json - server configurations
-cert.pem - server PUBLIC key
-key.pem - server PRIVATE key (never copy this off the server)
+ - config.json - server configurations
+ - cert.pem - server PUBLIC key
+ - key.pem - server PRIVATE key (never copy this off the server)
 </br>
 
 The `--config` flag will automatically detect reasonable default configurations.
