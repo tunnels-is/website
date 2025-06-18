@@ -42,21 +42,6 @@
 			"indent": 2
 		},
 		{
-			"tag": "DNS Server",
-			"file": "dns.md",
-			"indent": 0
-		},
-		{
-			"tag": "Configuring the DNS",
-			"file": "dns-configuration.md",
-			"indent": 2
-		},
-		{
-			"tag": "DNS Block Lists",
-			"file": "dns-blocklists.md",
-			"indent": 2
-		},
-		{
 			"tag": "Tunnels Servers",
 			"file": "vpn-server.md",
 			"indent": 0
