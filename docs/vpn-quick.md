@@ -13,6 +13,7 @@
  - RAM: 500MB (we do some memory pre-allocation for performance reasons)
  - DISK: Tunnels does not use disk
 
+
 # Step 1
 Download and run the server binary to a location of your choosing.
 Releases can be found [here](https://github.com/tunnels-is/tunnels/releases/latest)

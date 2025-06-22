@@ -6,7 +6,7 @@ const footerLinks = [
 	{ text: "Private VPN", url: "/technical" },
 	{ text: "Free Features", url: "/free" },
 	{ text: "Terms", url: "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tunnels-is/media/master/terms/terms.pdf" },
-	{ text: "Github", url: "https://github.com/tunnels-is" },
+	{ text: "", url: "" },
 	{ text: "X", url: "https://x.com/tunnels_is" },
 
 	{ text: "Public VPN", url: "/public" },
@@ -19,7 +19,7 @@ const footerLinks = [
 	{ text: "Timeline", url: "https://calendar.google.com/calendar/embed?src=support%40nicelandvpn.is" },
 	{ text: "", url: "" },
 	{ text: "", url: "" },
-	{ text: "", url: "" },
+	{ text: "Github", url: "https://github.com/tunnels-is" },
 
 	{ text: "Enterprise", url: "/enterprise" },
 	{ text: "Pricing", url: "/pricing" },
@@ -56,9 +56,6 @@ const Footer = () => {
 		<div className="footer">
 			<div className="grey-container">
 				{footerLinks.map((i, index) => {
-					if (i.url === "") {
-						return (<></>)
-					}
 					let item = i
 					let url = ""
 					let text = ""
