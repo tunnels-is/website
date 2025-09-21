@@ -4,13 +4,6 @@
 
 [All Releases](https://github.com/tunnels-is/tunnels/releases)
 
-[Windows](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Windows_x86_64.zip)
-[Windows arm64](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Windows_arm64.zip)
-[Linux](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Linux_x86_64.tar.gz)
-[Linux arm64](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Linux_arm_64.tar.gz)
-[MacOS](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Darwin_x86_64.tar.gz)
-[MacOS arm64](https://github.com/tunnels-is/tunnels/releases/download/v1.0.15/tunnels_1.0.15_Darwin_arm64.tar.gz)
-
 ## Register
 NOTE: Tunnels supports username registration on a first come first served basis.You can register in the app or [on the website](https://www.tunnels.is/register)
 

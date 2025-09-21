@@ -1,7 +1,7 @@
 const DATA = "data_";
 import { LayersIcon } from '@radix-ui/react-icons';
 import axios from 'axios';
-const Version = "2.0.2"
+const Version = "2.0.7"
 
 var STORE = {
 	Name: "Tunnels",
@@ -90,8 +90,8 @@ var STORE = {
 			Subtitle: "click here for all available releases",
 			AllLink: "https://github.com/tunnels-is/tunnels/releases/latest",
 			MacOS: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Darwin_arm64.tar.gz",
-			Windows: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Windows_x86_64.zip",
-			Linux: "https://github.com/tunnels-is/tunnels/releases/latest",
+			Windows: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Windows_amd64.zip",
+			Linux: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Linux_amd64.tar.gz",
 		},
 		Pricing: {
 			Title: "",
