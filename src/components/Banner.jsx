@@ -4,22 +4,26 @@ const Banner = (props) => {
   return (<div className={"banner viewport-hide " + props.tag1}>
 
     <div className="top-text">
-      <h1 className="text bigtitle">{props.title}</h1>
-      <p className="subtitle" dangerouslySetInnerHTML={{ __html: props.subtitle }}>
+      <h1 className="text tb t1">Next Generation</h1>
+      <h1 className="text tb t2">Networking Solution</h1>
+      <p className="subtitle">
+        In this section we will put some amazing text!
       </p>
     </div>
 
-    <div class="mosaic-grid">
-      <div class="mosaic-item item-1">
-        <img src={props.img1} alt="A web UI table showing server locations, IPs, and IDs." />
-      </div>
-      <div class="mosaic-item item-2">
-        <img src={props.img2} alt="A web UI showing DNS settings with fields for Server IP, Port, and DNS providers." />
-      </div>
-      <div class="mosaic-item item-5">
-        <img src={props.img5} alt="A terminal-style log output showing debug and info messages with timestamps." />
-      </div>
+    <div className="topics">
+      <div className="cta-button t">Free And OpenSource</div>
+      <div className="cta-button t">Tunnels Security</div>
+      <div className="cta-button t">Public VPN</div>
+      <div className="cta-button t">Homelab</div>
+      <div className="cta-button t">Cloud And Baremetal</div>
+      <div className="cta-button t">IoT Networks</div>
+      <div className="cta-button t">Office Networks</div>
+      <div className="cta-button t">LAN over WAN</div>
+      <div className="cta-button t">Personal VPN</div>
+      <div className="cta-button t">DNS Security</div>
     </div>
+
 
 
   </div>)
