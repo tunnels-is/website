@@ -100,7 +100,6 @@ var STORE = {
 		Register: {
 			Title: "Join Tunnels Today",
 			Subtitle: "24/h free trial no credit card required",
-
 		},
 		Home: {
 			Banner: {
@@ -113,23 +112,6 @@ var STORE = {
 				Img5: "https://raw.githubusercontent.com/tunnels-is/media/master/new-website/banner-grid/5.png",
 			},
 
-			TriForce: {
-				Content1: "",
-				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/size-on-disk.png",
-				Content2: "",
-				Img2: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/screens/memory-use.png",
-				Content3: "",
-				Img3: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/logo/reddit-logo.png",
-			},
-
-			ReverseTriForce: {
-				Content1: "Security and privacy focused for individuals",
-				Img1: "https://raw.githubusercontent.com/tunnels-is/media/master/web/all-connections.png",
-				Content2: "Flexible network functionality for Developers",
-				Img2: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/temp/clean-settings.png",
-				Content3: "Simple deployments and reduced attack surface for Enterprise",
-				Img3: "https://raw.githubusercontent.com/tunnels-is/media/master/v3/temp/clean-settings.png",
-			},
 
 			ImageRight1: {
 				Title: "DNS Blackhole",
