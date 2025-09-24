@@ -16,7 +16,7 @@ const footerLinks = [
 	{ text: "Discord", url: "https://discord.com/invite/7Ts3PCnCd9" },
 
 	{ text: "Routable DNS", url: "/dns" },
-	{ text: "Timeline", url: "https://calendar.google.com/calendar/embed?src=support%40nicelandvpn.is" },
+	{ text: "Timeline", url: "https://tunnels.is" },
 	{ text: "", url: "" },
 	{ text: "", url: "" },
 	{ text: "Github", url: "https://github.com/tunnels-is" },

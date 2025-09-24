@@ -413,7 +413,6 @@ Tunnels is essentially a network multiplexer and DNS proxy.
 
 	},
 	Config: {
-		docsLink: "https://docs.nicelandvpn.is",
 		APITimeout: 20000,
 		HEADERS: {
 			// "X-AUTH-TOKEN": "some-authentication-token",

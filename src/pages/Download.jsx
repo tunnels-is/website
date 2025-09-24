@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import ScrollAnimate from "../components/ScrollAnimate";
-import STORE from "../store";
-import Triforce from "../components/Triforce";
 import SmallBanner from "../components/SmallBanner";
 import Download from "../components/Download";
 
