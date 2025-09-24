@@ -20,6 +20,7 @@ import PublicPage from "./pages/Public";
 import FreePage from "./pages/Free";
 import NavBar from "./components/NavBar";
 import RegisterPage from "./pages/Register";
+import FreeAndOpenSource from "./pages/FreeAndOpenSource";
 
 var rootEle = document.getElementById('root')
 const root = createRoot(rootEle);
@@ -38,15 +39,16 @@ const App = () => {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/home" element={<Home />} />
-						<Route path="/free" element={<FreePage />} />
+						<Route path="/free-and-opensource" element={<FreeAndOpenSource />} />
+						// <Route path="/free" element={<FreePage />} />
 						// <Route path="/public" element={<PublicPage />} />
-						<Route path="/technical" element={<Technical />} />
-						<Route path="/enterprise" element={<Enterprise />} />
+						// <Route path="/technical" element={<Technical />} />
+						// <Route path="/enterprise" element={<Enterprise />} />
 						<Route path="/download" element={<DownloadPage />} />
 						<Route path="/pricing" element={<PricingPage />} />
 						<Route path="/register" element={<RegisterPage />} />
-						<Route path="/cybermonday" element={<PricingPage />} />
-						<Route path="/dns" element={<DNS />} />
+						// <Route path="/cybermonday" element={<PricingPage />} />
+						// <Route path="/dns" element={<DNS />} />
 
 						<Route path="/docs/" element={<Documentation />} />
 						<Route path="/docs/:tag" element={<Documentation />} />

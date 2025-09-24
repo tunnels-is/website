@@ -4,6 +4,7 @@ import axios from 'axios';
 const Version = "2.0.7"
 
 var CFG = {
+  MenuURL: "https://raw.githubusercontent.com/tunnels-is/website/main/docs/menu.json",
   DocMenu: { "BaseURL": "", "Menu": [] },
   // Temporary content that can be used as placeholder
   TmpContent: {
@@ -65,3 +66,5 @@ var CFG = {
     Linux: "https://github.com/tunnels-is/tunnels/releases/download/v" + Version + "/tunnels_" + Version + "_Linux_amd64.tar.gz",
   },
 }
+
+export default CFG;
