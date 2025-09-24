@@ -38,7 +38,7 @@ const Home = () => {
 		/>
 
 
-		<Diagram
+		{/* <Diagram
 			imgClass="diagram-fix-ml"
 			link={"/technical"}
 			title={STORE.Content.Diagrams.Genericvpn.Title}
@@ -72,7 +72,7 @@ const Home = () => {
 			content={STORE.Content.Diagrams.Nat.Content}
 			img={STORE.Content.Diagrams.Nat.Img1}
 			tag1={"animate5"}
-		/>
+		/> */}
 
 		<TextImageRight
 			title={STORE.Content.DNSPage.DNSProtection.Title}
@@ -81,14 +81,14 @@ const Home = () => {
 			tag1={"animate7"}
 		/>
 
-		<Diagram
+		{/* <Diagram
 			link={"/dns"}
 			imgClass="diagram-fix-ml"
 			title={STORE.Content.Diagrams.Dns.Title}
 			content={STORE.Content.Diagrams.Dns.Content}
 			img={STORE.Content.Diagrams.Dns.Img1}
 			tag1={"animate6"}
-		/>
+		/> */}
 
 	</div>)
 
