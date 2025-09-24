@@ -74,12 +74,12 @@ const Home = () => {
 			tag1={"animate5"}
 		/> */}
 
-		<TextImageRight
+		{/* <TextImageRight
 			title={STORE.Content.DNSPage.DNSProtection.Title}
 			content={STORE.Content.DNSPage.DNSProtection.Content}
 			img={STORE.Content.DNSPage.DNSProtection.Img}
 			tag1={"animate7"}
-		/>
+		/> */}
 
 		{/* <Diagram
 			link={"/dns"}
