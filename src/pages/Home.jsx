@@ -29,13 +29,10 @@ const Home = () => {
 	}, [])
 
 	return (<div className="home-page">
-
 		<TopicsBanner
 			tag1={"animate1"}
 		/>
-
 	</div>)
-
 }
 
 export default Home;

@@ -21,15 +21,15 @@ const TopicsBanner = (props) => {
 
       <div className="topics">
         <div className="cta-button t" onClick={() => handleTopicClick("free-and-opensource")}>Free And OpenSource</div>
-        <div className="cta-button t" onClick={() => handleTopicClick("tunnels-security")}>Tunnels Security</div>
-        <div className="cta-button t" onClick={() => handleTopicClick("public-vpn")}>Public VPN</div>
+        <div className="cta-button t" onClick={() => handleTopicClick("internals")}>Tunnels Security</div>
+        <div className="cta-button t" onClick={() => handleTopicClick("public")}>Public VPN</div>
         <div className="cta-button t" onClick={() => handleTopicClick("homelab")}>Homelab</div>
         <div className="cta-button t" onClick={() => handleTopicClick("cloud-and-baremetal")}>Cloud And Baremetal</div>
         <div className="cta-button t" onClick={() => handleTopicClick("iot-networks")}>IoT Networks</div>
         <div className="cta-button t" onClick={() => handleTopicClick("office-networks")}>Office Networks</div>
         <div className="cta-button t" onClick={() => handleTopicClick("lan-over-wan")}>LAN over WAN</div>
         <div className="cta-button t" onClick={() => handleTopicClick("personal-vpn")}>Personal VPN</div>
-        <div className="cta-button t" onClick={() => handleTopicClick("dns-security")}>DNS Security</div>
+        <div className="cta-button t" onClick={() => handleTopicClick("dns")}>DNS Security</div>
       </div>
     </div>
   )

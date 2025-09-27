@@ -14,12 +14,12 @@ const NavBar = (props) => {
 	const [open, setOpen] = useState(false);
 
 	const items = [
-		{ icon: ExternalLinkIcon, label: "Private VPN", route: "technical" },
+		// { icon: ExternalLinkIcon, label: "Private VPN", route: "technical" },
 		// { icon: EnterIcon, label: "DNS Routing", route: "dns" },
-		{ icon: ExternalLinkIcon, label: "Public Network", route: "public" },
-		{ icon: EnterIcon, label: "Enterprise", route: "enterprise" },
+		// { icon: ExternalLinkIcon, label: "Public Network", route: "public" },
+		// { icon: EnterIcon, label: "Enterprise", route: "enterprise" },
 		// { icon: ExternalLinkIcon, label: "Pricing", route: "Pricing" },
-		{ icon: AccessibilityIcon, label: "Documentation", route: "docs", },
+		// { icon: AccessibilityIcon, label: "Documentation", route: "docs", },
 	]
 
 	let { pathname } = location

@@ -28,7 +28,8 @@
   --c-shade4: #999a9b;
   --c-shade5: #dddddd;
   --c-shade6: #f2f2f2;
-  --c-blue: #2056e1;
+  /* --c-blue: #2056e1; */
+  --c-blue: #2056e1ab;
   --c-light-blue: #3168f3;
 
   --c-green: #28ad85;
@@ -143,6 +144,7 @@
 }
 
 .basic-page {
+  padding-top:200px;
   display: flex;
   flex-direction: column;
   gap: 200px;
@@ -947,7 +949,7 @@ body::-webkit-scrollbar {
 
   .top-text {
     text-align: center;
-    margin-bottom:100px;
+    margin-bottom:80px;
 
     .cta-button {
       height: 35px;
@@ -963,7 +965,7 @@ body::-webkit-scrollbar {
     .t1 {
     }
     .t2 {
-      margin-top:-80px;
+      margin-top:-70px;
     }
 
     .title {
@@ -985,7 +987,7 @@ body::-webkit-scrollbar {
       display:flex;
       flex-direction:row;
       gap:20px;
-      width:80%;
+      width:60%;
       flex-wrap:wrap;
 
       .t {
@@ -1320,6 +1322,7 @@ margin-left:-55px;
 
   .link {
     text-decoration: none;
+    color:var(--c-white);
   }
 
   .text {
