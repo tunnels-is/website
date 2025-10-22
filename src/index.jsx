@@ -22,6 +22,12 @@ import NavBar from "./components/NavBar";
 import RegisterPage from "./pages/Register";
 import FreeAndOpenSource from "./pages/FreeAndOpenSource";
 import Security from "./pages/Security";
+import Homelab from "./pages/Homelab";
+import CloudAndBaremetal from "./pages/CloudAndBaremetal";
+import PersonalVPN from "./pages/PersonalVPN";
+import IOTNetworks from "./pages/IOTNetworks";
+import OfficeNetworks from "./pages/OfficeNetworks";
+import LANOverWAN from "./pages/LANOverWAN";
 
 var rootEle = document.getElementById('root')
 const root = createRoot(rootEle);
@@ -43,6 +49,7 @@ const App = () => {
 						<Route path="/free-and-opensource" element={<FreeAndOpenSource />} />
 						// <Route path="/free" element={<FreePage />} />
 						<Route path="/public" element={<PublicPage />} />
+						<Route path="/homelab" element={<Homelab />} />
 						<Route path="/internals" element={<Security />} />
 						// <Route path="/enterprise" element={<Enterprise />} />
 						<Route path="/download" element={<DownloadPage />} />
@@ -50,6 +57,11 @@ const App = () => {
 						<Route path="/register" element={<RegisterPage />} />
 						// <Route path="/cybermonday" element={<PricingPage />} />
 						<Route path="/dns" element={<DNS />} />
+						<Route path="/cloud-and-baremetal" element={<CloudAndBaremetal />} />
+						<Route path="/personal-vpn" element={<PersonalVPN />} />
+						<Route path="/iot-networks" element={<IOTNetworks />} />
+						<Route path="/office-networks" element={<OfficeNetworks />} />
+						<Route path="/lan-over-wan" element={<LANOverWAN />} />
 
 						<Route path="/docs/" element={<Documentation />} />
 						<Route path="/docs/:tag" element={<Documentation />} />

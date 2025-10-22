@@ -1195,6 +1195,14 @@ margin-left:-55px;
   }
 }
 
+.homelab-page{
+display:flex;
+flex-direction:column;
+gap: 200px;
+margin-top:200px;
+  
+}
+
 .doc-page {
   margin-top: 130px;
   display: flex;
@@ -1431,3 +1439,5 @@ margin-left:-55px;
 .hljs-strong {
   font-weight: bold
 }
+
+

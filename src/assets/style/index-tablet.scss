@@ -168,7 +168,7 @@
     .item-4, .item-5 {
       display:none;
     }
- 
+
     .right {
       left: 70px;
       top: 303px;
@@ -182,6 +182,27 @@
 
     .left {
       display: none;
+    }
+  }
+
+  .textbanner {
+    padding: 80px 40px;
+    min-height: 350px;
+
+    .top-text {
+      .title {
+        font-size: 38px !important;
+      }
+    }
+  }
+
+  .textcenter-component {
+    padding: 30px;
+
+    .text {
+      .title {
+        font-size: 32px !important;
+      }
     }
   }
 

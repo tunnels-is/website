@@ -123,7 +123,8 @@
     margin-top: 100px;
 
     img {
-      min-width: 550px;
+      min-width: unset;
+      width: 100%;
     }
 
     .text {
@@ -132,11 +133,12 @@
     }
   }
 
-  .textimageleft-component {
+  .textimageright-component {
     margin-top: 100px;
 
     img {
-      min-width: 550px;
+      min-width: unset;
+      width: 100%;
     }
 
     .text {
@@ -146,9 +148,38 @@
   }
 
   .smallbanner {
-
     margin-top: 0px;
     height: 200px !important;
+  }
+
+  .textbanner {
+    padding: 60px 20px;
+    min-height: 300px;
+    margin-bottom: 50px;
+
+    .top-text {
+      .title {
+        font-size: 32px !important;
+      }
+
+      .text-content {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .textcenter-component {
+    padding: 20px;
+
+    .text {
+      .title {
+        font-size: 28px !important;
+      }
+
+      .section-text {
+        font-size: 16px;
+      }
+    }
   }
 
   .banner {
