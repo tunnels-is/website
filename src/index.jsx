@@ -24,6 +24,13 @@ import RegisterPage from "./pages/Register";
 var rootEle = document.getElementById('root')
 const root = createRoot(rootEle);
 
+const ExternalRedirect = ({ url }) => {
+	useEffect(() => {
+		window.location.href = url;
+	}, [url]);
+	return null;
+};
+
 const App = () => {
 	rootEle.classList.add("light")
 
@@ -48,8 +55,8 @@ const App = () => {
 						<Route path="/cybermonday" element={<PricingPage />} />
 						<Route path="/dns" element={<DNS />} />
 
-						<Route path="/docs/" element={<Documentation />} />
-						<Route path="/docs/:tag" element={<Documentation />} />
+						<Route path="/docs/" element={<ExternalRedirect url="https://docs.tunnels.is/docs" />} />
+						<Route path="/docs/:tag" element={<ExternalRedirect url="https://docs.tunnels.is/docs" />} />
 					</Routes>
 
 				</div>
