@@ -1,7 +1,7 @@
 const DATA = "data_";
 import { LayersIcon } from '@radix-ui/react-icons';
 import axios from 'axios';
-const Version = "2.0.7"
+const Version = "2.0.8"
 
 var STORE = {
 	Name: "Tunnels",
